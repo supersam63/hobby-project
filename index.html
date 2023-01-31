@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swimming 🏊🏻‍♀️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/33ffdc66da.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <style>
+    body {
+      background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/240/original/vecteezy_blue-and-clear-water-texture-swimming-pool-rippled-water-background_.jpg?1666114864);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Fuzzy Bubbles", cursive;
+    }
+    h2 {
+      text-align: center;
+      font-size: 20px;
+      font-family: "Fuzzy Bubbles", cursive;
+      margin-bottom: 20px;
+    }
+    .stroke {
+      max-width: 100%;
+      height: 300px;
+      transition: all 200ms ease-in-out;
+      border-radius: 10px;
+    }
+    .stroke:hover {
+      filter: contrast(80%);
+      transform: scale(1.1);
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 1750px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      font-family: "Fuzzy Bubbles", cursive;
+      border-radius: 6px;
+      transition: all 150ms ease-in-out;
+    }
+    .lessons-button {
+      border: 1px solid #226590;
+      background: white;
+      font-size: 24px;
+      padding: 10px 15px;
+    }
+    .lessons-button:hover {
+      background: #226590;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 20px;
+      font-family: "Fuzzy Bubbles", cursive;
+    }
+    .theme-button {
+      font-size: 14px;
+      background: black;
+      color: white;
+      padding: 8px 10px;
+    }
+    .theme-button:hover {
+      color: black;
+      background: white;
+      cursor: pointer;
+    }
+    li {
+      line-height: 2;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: larger;
+    }
+    .information {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 20px;
+    }
+    .swim-main-picture {
+      max-width: 100%;
+      height: 800px;
+      border-radius: 10px;
+      grid-column: 2 / 3;
+      grid-row: 1 / span 2;
+      place-self: center;
+    }
+    .butterfly {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .backstroke {
+      grid-column: 1 / 2;
+      grid-row: 2;
+    }
+    .breastroke {
+      grid-column: 3;
+      grid-row: 1 / 2;
+    }
+    .freestyle {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 15px;
+      place-items: center;
+    }
+    footer {
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      max-width: 400px;
+    }
+    .dark {
+      background: black;
+      color: white;
+    }
+    .dark .container {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Competitive Swimming</h1>
+      <h2>🐠 Four strokes to get you there 🐠</h2>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/083/original/swimming_main.jpeg?1666034634"
+          class="swim-main-picture" />
+
+        <a
+          class="butterfly-link"
+          href="https://en.wikipedia.org/wiki/Butterfly_stroke"
+          target="_blank"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/077/original/butterfly_2.jpeg?1666033794"
+            class="butterfly stroke" />
+        </a>
+        <a
+          class="backstroke-link"
+          href="https://en.wikipedia.org/wiki/Backstroke"
+          target="_blank"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/079/original/backstroke.jpeg?1666034108"
+            class="backstroke stroke" />
+        </a>
+        <a
+          class="breastroke-link"
+          href="https://en.wikipedia.org/wiki/Breaststroke"
+          target="_blank"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/085/original/breastroke.jpeg?1666034831"
+            class="breastroke stroke" />
+        </a>
+        <a
+          class="freestyle-link"
+          href="https://en.wikipedia.org/wiki/Freestyle_swimming"
+          target="_blank"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/124/original/freestyle.jpeg?1666049851"
+            class="freestyle stroke" />
+        </a>
+      </div>
+      <div class="information">
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li">
+              <i class="fa-solid fa-person-swimming"> </i>
+            </span>
+            Butterfly: performed face down in the water. The legs perform a
+            dolphin kick while the arms move in a forward circle at the same
+            time.
+          </li>
+          <li>
+            <span class="fa-li">
+              <i class="fa-solid fa-person-swimming"> </i>
+            </span>
+            Backstroke: done while lying on the back. One arm reaches behind the
+            head with a fingertip entry while the other arm is by the side. The
+            legs perform a flutter kick.
+          </li>
+          <li>
+            <span class="fa-li">
+              <i class="fa-solid fa-person-swimming"> </i>
+            </span>
+            Breaststroke: performed face down in the water without rotating the
+            torso. The arms stay in the water and move synchronously, while the
+            legs perform a breastroke kick.
+          </li>
+          <li>
+            <span class="fa-li">
+              <i class="fa-solid fa-person-swimming"> </i>
+            </span>
+            Front crawl: the fastest style for swimming on the surface. Done
+            while face down. The arms alternate while the legs perform a flutter
+            kick.
+          </li>
+        </ul>
+      </div>
+      <button class="lessons-button">Sign up for lessons</button>
+    </div>
+    <footer>Coded by Samantha Vellinga</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      function signUp() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        email = email.toLocaleLowerCase();
+        email = email.trim();
+        alert(
+          `Thank you, ${name}. Check your inbox for the sign up sheet. In the meantime...just keep swimming! 🐡`
+        );
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let signUpButton = document.querySelector(".lessons-button");
+      signUpButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
