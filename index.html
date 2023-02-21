@@ -42,7 +42,7 @@
     }
     .container {
       margin: 0 auto;
-      max-width: 1750px;
+      max-width: 1890px;
       background: white;
       padding: 20px;
       border-radius: 10px;
@@ -137,6 +137,18 @@
     .dark .container {
       background: rgba(255, 255, 255, 0.2);
     }
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 900px) {
+      .swim-main-picture {
+        display: none;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
   <body>
     <button class="theme-button">Change Theme</button>
@@ -146,7 +158,7 @@
       <div class="grid">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/083/original/swimming_main.jpeg?1666034634"
-          class="swim-main-picture" />
+          class="swim-main-picture img-fluid" />
 
         <a
           class="butterfly-link"
@@ -154,7 +166,7 @@
           target="_blank"
           ><img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/077/original/butterfly_2.jpeg?1666033794"
-            class="butterfly stroke" />
+            class="butterfly stroke img-fluid" />
         </a>
         <a
           class="backstroke-link"
@@ -162,7 +174,7 @@
           target="_blank"
           ><img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/079/original/backstroke.jpeg?1666034108"
-            class="backstroke stroke" />
+            class="backstroke stroke img-fluid" />
         </a>
         <a
           class="breastroke-link"
@@ -170,7 +182,7 @@
           target="_blank"
           ><img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/085/original/breastroke.jpeg?1666034831"
-            class="breastroke stroke" />
+            class="breastroke stroke img-fluid" />
         </a>
         <a
           class="freestyle-link"
@@ -178,7 +190,7 @@
           target="_blank"
           ><img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/124/original/freestyle.jpeg?1666049851"
-            class="freestyle stroke" />
+            class="freestyle stroke img-fluid" />
         </a>
       </div>
       <div class="information">
